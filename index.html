@@ -1,0 +1,102 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+
+    </head>
+    <body>
+        <section id="sideBar">
+            <div class="navList overflow-hidden vh-100 position-fixed p-4 d-flex flex-column justify-content-between">
+                <div class="w-100">
+                    <a id="nowPlayingBtn" class="text-decoration-none text-white barOption" href="#search"> Now Playing </a>
+                    <a id="popularBtn" class="text-decoration-none text-white barOption" href="#search"> Popular </a>
+                    <a id="topRatedBtn" class="text-decoration-none text-white barOption" href="#search"> Top Rated </a>
+                    <a id="trendingBtn" class="text-decoration-none text-white barOption" href="#search"> Trending </a>
+                    <a id="upcomingBtn" class="text-decoration-none text-white barOption" href="#search"> Upcoming </a>
+                    <a id="contactUsBtn" class="text-decoration-none text-white barOption" href="#contactUs"> Contact Us </a>
+                </div>
+                <div>
+                    <div class="w-50 d-flex justify-content-between">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fas fa-globe"></i></a>
+                    </div>
+                    <div class="copyrightText">
+                        <p>Copyright Â© 2019 All Rights Reserved.</p>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="navBarHead bg-white position-fixed vh-100 d-flex flex-column justify-content-between">
+                <div class="d-flex justify-content-center mt-2">
+                    <img id="logo" class="img-fluid align-self-center w-50" src="images/logo.png" alt="logo">
+                </div>
+                
+                <div id="barController" class="text-center">
+                    <i class="fa fa-align-justify text-center"></i>
+                </div>
+
+                <div class="mb-3 d-flex flex-column">
+                    <i class="fas fa-globe text-center p-2"></i>
+                    <i class="fas fa-share-alt text-center p-2"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="search">
+            <div class="container w-75 m-5 mx-auto">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input id="regularSearch" class="form-control text-center text-white" type="text" placeholder="get movies by word...">
+                    </div>
+                    <div class="col-md-6">
+                        <input id="searchByApi" class="form-control text-center text-white" type="text" placeholder="search...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container w-75 text-center">
+                <div id="moviesPosters" class="row">
+                    
+                </div>
+            </div>
+          </section>
+
+          <section id="contactUs" class="w-75 m-auto p-5">
+            <h2 class="text-white">Contact Us...</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <input id="nameInput" class="form-control text-center" type="text" placeholder="Enter Your Name">
+                    <p id="nameWarning" class="warning text-start d-none">Your Name is not valid</p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input id="emailInput" class="form-control text-center" type="text" placeholder="Enter Email">
+                    <p id="emailWarning" class="warning text-start d-none">Enter valid email</p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input id="phoneInput" class="form-control text-center" type="text" placeholder="Enter Phone">
+                    <p id="phoneWarning" class="warning text-start d-none">Enter valid phone</p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input id="ageInput" class="form-control text-center" type="text" placeholder="Enter Age">
+                    <p id="ageWarning" class="warning text-start d-none">Enter valid age</p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input id="passwordInput" class="form-control text-center" type="password" placeholder="Enter Password">
+                    <p id="passwordWarning" class="warning text-start d-none">entre valid password *Minimum eight characters, at least one letter and one number:*</p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input id="passwordReInput" class="form-control text-center" type="password" placeholder="Enter RePassword">
+                    <p id="rePasswordWarning" class="warning text-start d-none">Enter valid Re-password</p>
+                </div>
+            </div>
+            <button class="btn btn-outline-danger text-center" type="submit">Submit</button>
+          </section>
+
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/mine.js"></script>
+    </body>
+</html>
